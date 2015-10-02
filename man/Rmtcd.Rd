@@ -50,8 +50,7 @@ Lars Vilhuber (\email{lars.vilhuber@cornell.edu}). Please direct queries to the 
 \references{
 The original source code in C++ is available at \url{http://sites.duke.edu/tcrn/research-projects/downloadable-software/}
 
-This package is maintained at \url{https://github.com/charleycyx/SyntheticData}
+This package is maintained at \url{https://github.com/ncrncornell/Rmtcd}
 
-Development was supported by the NSF Census Research Network grant #xxxx (\url{https://www.ncrn.cornell.edu/})
+Development was supported by the NSF Census Research Network grant #1131848 to Cornell University (\url{https://www.ncrn.cornell.edu/})
 }
-
