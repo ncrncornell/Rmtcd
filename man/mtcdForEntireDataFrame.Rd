@@ -37,4 +37,7 @@ setwd("00_pkg_src/Rmtcd/test")
 read.table("data.txt") -> dataFrame
 mtcdForEntireDataFrame(dataFrame, numModel = 5)
 }
+\seealso{
+\code{\link{Rmtcd}}
+}
 

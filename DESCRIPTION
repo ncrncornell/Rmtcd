@@ -1,12 +1,28 @@
 Package: Rmtcd
 Type: Package
-Title: Create Synthetic Datasets
+Title: Synthesizing Truncated Count Data
 Version: 1.0
 Date: 2015-07-26
-Author: In order of contribution: Yuxin (Charley) Chen (yc769@cornell.edu), Hautahi Kingi (hrk55@cornell.edu), Alice Chou (aec247@cornell.edu), Lars Vilhuber (lars.vilhuber@cornell.edu).
-Maintainer: Labor Dynamics Institute <ldi@cornell.edu>
-Description: This package takes confidential migration data and creates synthetic datasets
-    based on the model of xxx.
-License: GPL (>= 2)
+Authors@R: c(person("Yuxin", "Chen", email = "yc769@cornell.edu", role = "aut"),
+             person("Hautahi", "Kingi", email = "hrk55@cornell.edu", role = "aut"),
+             person("Alice", "Chou", email = "aec247@cornell.edu", role = "ctb"),
+             person("Lars", "Vilhuber", email = "lars.vilhuber@cornell.edu", role = "ctb"),
+             person("Labor Dynamics Institute", email="ldi@cornell.edu", role = "cre"),
+             person("Sam", "Hawala", role = "aut", comment = "Source code C++"),
+             person("Jerry", "Reiter", role = "aut", comment = "Source code C++"),
+             person("Quanli", "Wang", role = "aut", comment = "Source code C++"))
+Description: To maintain confidentiality, national statistical agencies traditionally do not include
+ small counts in publicly released tabular data products. They typically delete these
+ small counts, or combine them with counts in adjacent table cells to preserve the totals
+ at higher levels of aggregation.  In some cases these suppression procedures result in
+ too much loss of information. To increase data utility and make more data publicly
+ available, Hawala et. al. created methods and software (in C++) to generate
+ synthetic values for the small counts from a Bayesian hierarchical model.  The software
+ generates synthetic data and computes several measures of disclosure risk, and was
+ applied by the Census Bureau in synthesizing small county-to-county migration counts.
+ This package provides an R-interface for implementing the code.
+ The original source C++ model is left unchanged aside from minor additions for R-compatibility. All inputs
+ and outputs from the model are R objects, as described in the documentation for [link here].
+License: Creative Commons Attribution-NonCommercial-ShareAlike (>= 4) | file LICENSE
 Imports: Rcpp (>= 0.11.6)
 LinkingTo: Rcpp

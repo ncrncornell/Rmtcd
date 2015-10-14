@@ -6,9 +6,10 @@
 \alias{Rmtcd-package}
 \title{Synthesizing Truncated Count Data}
 \description{
-This package provides an R wrapper function ([link here]) for the statistical
-model proposed in "Synthesizing Truncated Count Data for Confidentiality," which was originally written
-in C++ and developed by Sam Hawala, Jerry Reiter and Quanli Wang.
+This package provides an R wrapper function for the statistical
+model proposed in "Synthesizing Truncated Count Data for Confidentiality,"
+originally developed by Sam Hawala, Jerry Reiter and Quanli Wang (2014). Their C++ code
+served as the basis, and can be found at \url{http://sites.duke.edu/tcrn/research-projects/downloadable-software/}
 }
 \section{Background}{
 
@@ -31,16 +32,6 @@ and outputs from the model are R objects, as described in the documentation for 
 
 This package contains two functions: mtcdForEntireDataFrame and mtcdForSmallCount. mtcdForEntireDataFrame takes in a data frame and generate synthetic data for each row in the data frame, while mtcdForSmallCount allows users to specify an upper limit that defines "small count", and only synthesize counts that are smaller than or equal to the specified number.
 }
-
-\section{Properties}{
-
-\tabular{ll}{
-Package: \tab Rmtcd\cr
-Version: \tab 0.1\cr
-Date: \tab Aug 24 2015 \cr
-License: \tab This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. To view a copy of this license, visit \url{http://creativecommons.org/licenses/by-nc-sa/4.0/} or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.\cr
-}
-}
 \author{
 In order of contribution: Yuxin (Charley) Chen (\email{yc769@cornell.edu}),
 Hautahi Kingi (\email{hrk55@cornell.edu}),
@@ -48,9 +39,11 @@ Alice Chou (\email{aec247@cornell.edu}),
 Lars Vilhuber (\email{lars.vilhuber@cornell.edu}). Please direct queries to the Labor Dynamics Institute (\email{ldi@cornell.edu})
 }
 \references{
-The original source code in C++ is available at \url{http://sites.duke.edu/tcrn/research-projects/downloadable-software/}
+The original source code in C++ is available at
+ \url{http://sites.duke.edu/tcrn/research-projects/downloadable-software/}
+This R package is maintained at \url{https://github.com/ncrncornell/Rmtcd}
 
-This package is maintained at \url{https://github.com/ncrncornell/Rmtcd}
-
-Development was supported by the NSF Census Research Network grant #1131848 to Cornell University (\url{https://www.ncrn.cornell.edu/})
+Development of the original code was supported under the NSF grant SES-1131897 (NCRN Duke-NISS, \url{http://sites.duke.edu/tcrn/}).
+Development of the R wrapper was supported by the NSF Census Research Network grant #1131848 to Cornell University (\url{https://www.ncrn.cornell.edu/})
 }
+

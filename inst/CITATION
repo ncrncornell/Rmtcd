@@ -1,0 +1,37 @@
+citHeader("To cite the Rmtcd package in publications use:")
+
+citEntry(entry="techreport",
+  author   = "Hawala, Sam and Reiter, Jerry and Wang, Quanli",
+  title    = "Synthesizing Truncated Count Data for Confidentiality",
+  type     = "mimeo",
+  institution = "Duke University",
+  year     = 2014,
+  url      = "http://www.stat.duke.edu/~jerry/software/migration.zip",
+  textVersion=
+    paste("Hawala et al (2014),",
+          "Synthesizing Truncated Count Data for Confidentiality,",
+          "Duke University mimeo.",
+          sep=" ")
+)
+
+
+citEntry(
+  entry="Manual",
+  title = "Rmtcd: Synthesizing Truncated Count Data",
+  author = personList(
+    as.person("Yuxin Chen and Hautahi Kingi and Alice Chou and Lars Vilhuber")
+    ),
+  year = "2015",
+  url = "https://github.com/ncrncornell/Rmtcd",
+  note = "R package",
+  textVersion =
+  paste(
+    "Chen, Yuxin and Kingi, Hautahi and Chou, Alice and Vilhuber, Lars",
+    "Rmtcd: Synthesizing Truncated Count Data",
+    "R package",
+    "2015",
+    "https://github.com/ncrncornell/Rmtcd",
+    sep=". "
+  ),
+  header = "Also please use the following citation:"
+  )
