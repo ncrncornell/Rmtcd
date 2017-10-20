@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1034210.svg)](https://doi.org/10.5281/zenodo.1034210)
 # Synthesizing Truncated Count Data for Confidentiality (Rmtcd)
 
 `mtcd`  is a standalone  C++ implementation of the statistical model proposed in "Synthesizing Truncated Count Data for Confidentiality" ([Github copy](https://github.com/labordynamicsinstitute/flow-synthesis/blob/master/doc/NTTS2013Paper123.pdf)).  
